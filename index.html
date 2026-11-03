@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="bn" class="dark" style="background:#090B10;color:#F4F4F6;height:100%;min-height:100dvh;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#FF6B00" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Sumon S.F.R" />
+    <title>SUMON FROM RANGPUR — S.F.R Smart Notebook</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="/brand/pwa-192.png" />
+    <link rel="apple-touch-icon" href="/brand/pwa-192.png" />
+    <script>
+      window.__sfrDeferredPwaPrompt = null;
+      window.addEventListener('beforeinstallprompt', function (e) {
+        e.preventDefault();
+        window.__sfrDeferredPwaPrompt = e;
+        window.dispatchEvent(new Event('sfr-pwa-ready'));
+      });
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(function () {});
+        });
+      }
+    </script>
+  </head>
+  <body style="background:#090B10;color:#F4F4F6;margin:0;height:100%;min-height:100dvh;" class="antialiased selection:bg-orange-500/25 selection:text-orange-400">
+    <div id="root" style="height:100%;min-height:100dvh;">
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;background:#090B10;color:#F4F4F6;font-family:system-ui,-apple-system,sans-serif;gap:10px;padding:24px;text-align:center;">
+        <img src="/brand/sfr-logo.png" alt="S.F.R" width="68" height="68" style="width:68px;height:68px;border-radius:9999px;border:2px solid #FF6B00;object-fit:cover;" />
+        <div style="font-weight:800;letter-spacing:0.06em;font-size:15px;">SUMON FROM RANGPUR</div>
+        <div style="font-size:12px;color:#FB923C;">চালু হচ্ছে...</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

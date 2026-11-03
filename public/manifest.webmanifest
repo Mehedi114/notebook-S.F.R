@@ -1,0 +1,41 @@
+{
+  "id": "/?sfr-pwa=v4",
+  "name": "SUMON FROM RANGPUR — S.F.R Notebook",
+  "short_name": "Sumon S.F.R",
+  "description": "SUMON FROM RANGPUR Official Smart Script Notebook & Background Voice Reader",
+  "lang": "bn",
+  "start_url": "/?pwa=1",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#090B10",
+  "theme_color": "#FF6B00",
+  "categories": ["productivity", "entertainment"],
+  "icons": [
+    {
+      "src": "/brand/pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand/pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/brand/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
